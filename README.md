@@ -6,3 +6,4 @@
 * Husky
 * Prettier
 * CliGenerate
+* react-query
