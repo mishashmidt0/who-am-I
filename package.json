@@ -9,7 +9,8 @@
     "lint": "next lint",
     "prepare": "husky install",
     "lint-fix": "eslint --fix",
-    "comp": "generate-react component",
+    "component": "generate-react component",
+    "container": "generate-react component --type=container",
     "pr": "prettier --write ."
   },
   "lint-staged": {
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^4.2.3",
+    "@tanstack/react-query-devtools": "^4.3.1",
     "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.7",
     "eslint-config-airbnb": "^19.0.4",

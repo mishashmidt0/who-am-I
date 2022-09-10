@@ -2,6 +2,9 @@ import { createTheme } from 'styled-breakpoints';
 
 const palette = {
   white: '#ffffff',
+  bg: 'rgb(32, 35, 41)',
+  asphalt: 'rgb(60, 62, 68)',
+  dimgrey: '#696969',
 };
 
 const breakpoints = createTheme({

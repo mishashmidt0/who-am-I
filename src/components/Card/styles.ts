@@ -11,11 +11,23 @@ export const Box = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  background-color: red;
+  background: ${props => props.theme.palette.asphalt};
   border-radius: 10px;
   overflow: hidden;
+
+  border: 1px solid ${props => props.theme.palette.dimgrey};
 `;
-export const Title = styled(Typograhy)``;
+export const Title = styled(Typograhy)`
+  font-size: 20px;
+  text-align: center;
+
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  color: ${props => props.theme.palette.white};
+`;
 export const Container = styled.div`
   position: relative;
   width: 100%;

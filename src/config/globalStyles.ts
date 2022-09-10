@@ -66,5 +66,6 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, span, p, a {
   	font-family: 'Montserrat', sans-serif;
+    color: white;
   }
 `;

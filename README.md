@@ -1,9 +1,10 @@
-### В этом проекте используеться:  
-* NextJs, 
-* TypeScript, 
-* Styled-components, 
-* ESLint, 
-* Husky
-* Prettier
-* CliGenerate
-* react-query
+### В этом проекте используеться:
+
+- NextJs,
+- TypeScript,
+- Styled-components,
+- ESLint,
+- Husky
+- Prettier
+- CliGenerate
+- react-query
