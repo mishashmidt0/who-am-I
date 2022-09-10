@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import { useQuery, UseQueryResult } from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 
+import Menu from '../../src/containers/Menu';
 import { fetchRickAndMorty } from '../api/axios';
 
 import Card from 'components/Card';
@@ -49,6 +50,7 @@ const Search = (): ReturnComponentType => {
 
   return (
     <Layout>
+      <Menu />
       <Content>
         <Title variant="h1">Find Your Character</Title>
         <InputSearch

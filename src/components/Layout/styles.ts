@@ -6,8 +6,8 @@ export const Main = styled.main`
   min-height: 100vh;
   padding: 40px 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
+  align-items: start;
+  justify-content: center;
 
   background: ${props => props.theme.palette.bg};
 `;
