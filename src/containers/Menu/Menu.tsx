@@ -7,7 +7,11 @@ export interface MenuProps {
 }
 
 const Menu = ({ className }: MenuProps): ReturnComponentType => {
-  return <Box className={className}>Menu</Box>;
+  return (
+    <Box className={className}>
+      <p>Menu</p>
+    </Box>
+  );
 };
 
 export default Menu;

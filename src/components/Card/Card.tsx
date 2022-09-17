@@ -1,3 +1,4 @@
+import { useQueryClient } from '@tanstack/react-query';
 import Image from 'next/image';
 
 import { Box, Container, Title } from './styles';
@@ -11,6 +12,10 @@ export interface CardProps {
 }
 
 const Card = ({ className, name, image }: CardProps): ReturnComponentType => {
+  const queryClient = useQueryClient();
+
+  console.log(queryClient.getQueryData(['person', 'cat']));
+
   return (
     <Box className={className}>
       <Container>

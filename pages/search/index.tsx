@@ -3,13 +3,12 @@ import React, { ReactNode } from 'react';
 import { useQuery, UseQueryResult } from '@tanstack/react-query';
 import { AxiosError } from 'axios';
 
-import Menu from '../../src/containers/Menu';
-import { fetchRickAndMorty } from '../api/axios';
-
+import { fetchRickAndMorty } from 'api/axios';
 import Card from 'components/Card';
 import Error from 'components/Error';
 import Layout from 'components/Layout';
 import Loading from 'components/Loading';
+import Menu from 'containers/Menu';
 import { Container, Content, InputSearch, Title } from 'styles/search.styles';
 import { ReturnComponentType } from 'types';
 import { Date } from 'types/date';
@@ -25,7 +24,11 @@ const Search = (): ReturnComponentType => {
     useQuery<Date, Error>(
       ['person', debounedSearchValue],
       () => fetchRickAndMorty.search(debounedSearchValue),
-      { enabled: debounedSearchValue.length > 0 },
+      {
+        retry: 1,
+        refetchOnWindowFocus: false,
+        enabled: debounedSearchValue.length > 0,
+      },
     );
 
   const renderResult = (): ReactNode => {

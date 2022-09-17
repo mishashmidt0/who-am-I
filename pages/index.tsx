@@ -1,13 +1,11 @@
 import { useQuery, UseQueryResult } from '@tanstack/react-query';
 import type { GetServerSideProps } from 'next';
 
-import Error from '../src/components/Error';
-import Loading from '../src/components/Loading';
-
-import { fetchRickAndMorty } from './api/axios';
-
+import { fetchRickAndMorty } from 'api/axios';
 import Card from 'components/Card';
+import Error from 'components/Error';
 import Layout from 'components/Layout';
+import Loading from 'components/Loading';
 import { Container } from 'styles/index.styles';
 import { ReturnComponentType } from 'types';
 
@@ -21,15 +19,15 @@ interface HomeProps {
 }
 
 const Home = ({ person }: HomeProps): ReturnComponentType => {
-  const { isLoading, isError, error, data }: UseQueryResult<HeroType, Error> = useQuery<
-    HeroType,
-    Error
-  >(['person'], fetchRickAndMorty.get, { initialData: person });
+  const { isLoading, data }: UseQueryResult<HeroType, Error> = useQuery<HeroType, Error>(
+    ['person'],
+    fetchRickAndMorty.get,
+    { initialData: person },
+  );
 
   if (isLoading) {
     return <Loading />;
   }
-  if (isError) return <Error error={error} />;
 
   return (
     <Layout>
