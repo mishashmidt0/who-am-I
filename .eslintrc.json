@@ -28,10 +28,8 @@
     "plugin:effector/recommended",
     "plugin:effector/scope",
     "plugin:import/recommended",
-    "plugin:prettier/recommended",
     "plugin:unicorn/recommended",
     "plugin:jsx-a11y/recommended",
-    "prettier",
     "plugin:tailwindcss/recommended",
     "next/core-web-vitals"
   ],
@@ -115,8 +113,7 @@
       }
     ],
     "quotes": [
-      "error",
-      "single"
+      2, "single", { "avoidEscape": true }
     ],
     "semi": [
       "error",

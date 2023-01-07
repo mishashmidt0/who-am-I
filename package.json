@@ -1,7 +1,7 @@
 {
   "name": "my-app",
-  "baseUrl": "src",
   "version": "0.1.0",
+  "baseUrl": "src",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",

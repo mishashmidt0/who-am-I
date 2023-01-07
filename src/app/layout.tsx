@@ -1,5 +1,7 @@
-"use client";
+'use client';
+
 import '../../public/styles/globals.css';
+
 export default function RootLayout({
   children,
 }: {
