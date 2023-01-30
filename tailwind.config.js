@@ -1,9 +1,46 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
+const colors = {
+  black: '#000',
+  white: '#fff',
+  gray: '#616473',
+  gray2: '#72747D',
+};
+
+
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    plugins: [require('@tailwindcss/line-clamp')],
+    colors,
+    fontFamily: {
+      sans: ['"Montserrat"', ...fontFamily.sans],
+    },
+    corePlugins: {
+      container: false,
+    },
+    future: {
+      hoverOnlyWhenSupported: true,
+    },
+    screens: {
+      m392: '392px',
+      m512: '512px',
+      m600: '600px',
+      m744: '744px',
+      m920: '920px',
+      m1096: '1096px',
+
+      m320: '320px',
+      m375: '375px',
+      m475: '475px',
+      m576: '576px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {},
     container: {
       center: true,

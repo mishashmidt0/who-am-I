@@ -1,10 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  reactStrictMode: true,
-}
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
-module.exports = nextConfig
+module.exports = withBundleAnalyzer({
+  compress: false,
+  experimental: {
+    isrMemoryCacheSize: 0,
+  },
+  images: {
+    domains: ['images.unsplash.com'],
+    formats: ['image/webp'],
+  },
+  swcMinify: true,
+});
+
 
