@@ -6,6 +6,10 @@ const colors = {
   white: '#fff',
   gray: '#616473',
   gray2: '#72747D',
+  green: '#264743',
+  red: '#6f2825',
+  brown_light: '#d8c0b5',
+  brown_dark: '#ac7961',
 };
 
 
