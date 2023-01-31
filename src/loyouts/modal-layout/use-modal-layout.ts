@@ -1,7 +1,9 @@
+import { useStore } from "effector-react";
 import { useEffect } from 'react';
+import { $modal, ModalNames } from "src/store/modal";
 
-import { useStore } from 'effector-react';
-import { $modal, ModalNames } from 'store/modal';
+
+
 
 interface UseModalLayoutProps {
   name: ModalNames;
