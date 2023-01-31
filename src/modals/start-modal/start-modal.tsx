@@ -6,7 +6,7 @@ export const StartModal = () => {
   return (
     <ModalLayout name='start'>
       <div className="bg-white">
-        <p>Выберите Калоду</p>
+        <p>Выберите колоду</p>
       </div>
     </ModalLayout>
   );
