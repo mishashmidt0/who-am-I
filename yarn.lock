@@ -1011,7 +1011,7 @@ eslint-plugin-dirs@0.0.4:
     micromatch "^4.0.4"
     requireindex "~1.1.0"
 
-eslint-plugin-effector@0.10.3:
+eslint-plugin-effector@^0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-effector/-/eslint-plugin-effector-0.10.3.tgz#d2bf7ba1ae8501b6853817506d5cede75522d6e0"
   integrity sha512-ELDEwYSERD4eHRWEthlQilNfIrYZwQ2poeGBfX05YVy1vIc9ZhIDa8jP7v9djnvRSSJ4gFu4qQQOoau7O33kaw==
