@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import cc from 'classcat';
 import { Icon } from 'src/components/icon/icon';
 import { useModals } from 'src/hooks/use-modals';
-import { useModalLayout } from 'src/loyouts/modal-layout/use-modal-layout';
+import { useModalLayout } from 'src/layouts/modal-layout/use-modal-layout';
 import { ModalNames } from 'src/store/modal';
 
 interface ModalLayoutProps {

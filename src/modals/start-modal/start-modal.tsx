@@ -1,7 +1,7 @@
-import { ModalLayout } from 'src/loyouts/modal-layout/modal-layout';
+import { ModalLayout } from 'src/layouts/modal-layout/modal-layout';
 
 export const StartModal = () => {
-  console.log();
+  console.log(2);
 
   return (
     <ModalLayout name='start'>
