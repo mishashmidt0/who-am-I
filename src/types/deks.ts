@@ -1,11 +1,11 @@
-type CardType = {
+export type CardType = {
   id: number,
   name: string,
   imgSrc: string,
   isActive: boolean, 
 };
 
-type DeckType = {
+export type DeckType = {
   id: number,
   name: string,
   imgSrc: string,

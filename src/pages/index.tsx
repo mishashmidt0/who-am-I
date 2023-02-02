@@ -18,7 +18,7 @@ export default function Page() {
         {BUTTON_ARR.map(el => <Button key={el.id} 
         onClick={(el.id === 0) ? openStartModal : undefined} 
         title={el.title}
-        className="py-4 px-7 bg-red hover:bg-green font-medium" />)}
+        className=" bg-red hover:bg-green font-medium" />)}
       </div> 
       <StartModalDynamic />
     </div>
