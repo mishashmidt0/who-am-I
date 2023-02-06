@@ -47,7 +47,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'mainPageBg': "url('../image/img/bgMain.png')",
+        'mainPageBg': "url('../image/img/bgMain.webp')",
       },
     },
 

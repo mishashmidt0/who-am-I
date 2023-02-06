@@ -12,8 +12,7 @@ export default function Page() {
   };
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center m-0 pt-12 bg-brown_light 
-    bg-[url('../../public/image/img/bgMain.png')]" >
+    <div className="w-screen h-screen flex justify-center items-center m-0 pt-12 bg-mainPageBg" >
       <div className="flex justify-between gap-10 text-white  m576:text-xl">
         {BUTTON_ARR.map(el => <Button key={el.id} 
         onClick={(el.id === 0) ? openStartModal : undefined} 
