@@ -7,7 +7,6 @@ import { StartModalDynamic } from 'src/modals/start-modal/start-modal.dynamic';
 export default function Page() {
   const {showModal} = useModals();
   const openStartModal = ()=>{
-    console.log(1);
     showModal('start');
   };
 
