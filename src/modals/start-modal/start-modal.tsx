@@ -10,7 +10,7 @@ export const StartModal = () => {
       <div className="flex items-center flex-col gap-5 m-10 p-10 rounded-lg bg-white">
         <div className="grid grid-cols-3 gap-10
 ">
-          {CARD_DECKS_ARR.map(el => <Card item={el} onClick={chooseDeck}/>)}
+          {CARD_DECKS_ARR.map(el => <Card item={el} onClick={chooseDeck} key={el.id}/>)}
         </div>
         <Button title="Начать игру" className="w-1/6 bg-red hover:bg-green" />
       </div>
