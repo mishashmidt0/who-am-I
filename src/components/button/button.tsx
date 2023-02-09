@@ -8,7 +8,7 @@ interface ButtonProps {
 
 export const Button = ({ title, className, onClick }: ButtonProps) =>
   <button onClick={onClick} className={cc(
-    ['rounded-full hover:shadow-xl font-medium', className]
+    ['rounded-full hover:shadow-xl active:bg-greenLight font-medium text-white py-4 px-7', className]
   )}>
     {title}
   </button>;

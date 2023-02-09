@@ -7,6 +7,7 @@ const colors = {
   gray: "#616473",
   gray2: "#72747D",
   green: "#264743",
+  greenLight: "#025959",
   red: "#6f2825",
   brownLight: "#d8c0b5",
   brownDark: "#ac7961",
@@ -46,7 +47,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'mainPageBg': "url('../image/img/bgMain.png')",
+        'mainPageBg': "url('../image/img/bgMain.webp')",
       },
     },
 
