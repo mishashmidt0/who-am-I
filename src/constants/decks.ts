@@ -45,5 +45,37 @@ export const CARD_DECKS_ARR: CardDecksArrType = [
       {id: 3, name: 'Пожарный', imgSrc: '/image/img/professions/firefighter.webp', isActive: true},
       {id: 4, name: 'Шпион', imgSrc: '/image/img/professions/spy.webp', isActive: true},
     ]},
+    {id: 3, name: 'Профессии', imgSrc: '/image/img/professions/professionsDeck.webp', cardsArr:
+    [
+      {id: 0, name: 'Почтальон', imgSrc: '/image/img/professions/postman.webp', isActive: true},
+      {id: 1, name: 'Художник', imgSrc: '/image/img/professions/artist.webp', isActive: true},
+      {id: 2, name: 'Доктор', imgSrc: '/image/img/professions/doctor.webp', isActive: true},
+      {id: 3, name: 'Пожарный', imgSrc: '/image/img/professions/firefighter.webp', isActive: true},
+      {id: 4, name: 'Шпион', imgSrc: '/image/img/professions/spy.webp', isActive: true},
+    ]},
+    {id: 4, name: 'Профессии', imgSrc: '/image/img/professions/professionsDeck.webp', cardsArr:
+    [
+      {id: 0, name: 'Почтальон', imgSrc: '/image/img/professions/postman.webp', isActive: true},
+      {id: 1, name: 'Художник', imgSrc: '/image/img/professions/artist.webp', isActive: true},
+      {id: 2, name: 'Доктор', imgSrc: '/image/img/professions/doctor.webp', isActive: true},
+      {id: 3, name: 'Пожарный', imgSrc: '/image/img/professions/firefighter.webp', isActive: true},
+      {id: 4, name: 'Шпион', imgSrc: '/image/img/professions/spy.webp', isActive: true},
+    ]},
+    {id: 5, name: 'Профессии', imgSrc: '/image/img/professions/professionsDeck.webp', cardsArr:
+    [
+      {id: 0, name: 'Почтальон', imgSrc: '/image/img/professions/postman.webp', isActive: true},
+      {id: 1, name: 'Художник', imgSrc: '/image/img/professions/artist.webp', isActive: true},
+      {id: 2, name: 'Доктор', imgSrc: '/image/img/professions/doctor.webp', isActive: true},
+      {id: 3, name: 'Пожарный', imgSrc: '/image/img/professions/firefighter.webp', isActive: true},
+      {id: 4, name: 'Шпион', imgSrc: '/image/img/professions/spy.webp', isActive: true},
+    ]},
+    {id: 6, name: 'Профессии', imgSrc: '/image/img/professions/professionsDeck.webp', cardsArr:
+    [
+      {id: 0, name: 'Почтальон', imgSrc: '/image/img/professions/postman.webp', isActive: true},
+      {id: 1, name: 'Художник', imgSrc: '/image/img/professions/artist.webp', isActive: true},
+      {id: 2, name: 'Доктор', imgSrc: '/image/img/professions/doctor.webp', isActive: true},
+      {id: 3, name: 'Пожарный', imgSrc: '/image/img/professions/firefighter.webp', isActive: true},
+      {id: 4, name: 'Шпион', imgSrc: '/image/img/professions/spy.webp', isActive: true},
+    ]},
   
 ];

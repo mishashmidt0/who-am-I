@@ -19,7 +19,7 @@ export default function Playground() {
   }
 
   return (
-    <div className='h-screen flex flex-col justify-center items-center gap-5 bg-mainPageBg'>
+    <div className='wrapper'>
       <div className='flex gap-3 justify-center flex-wrap'>
         {playerGameDeck != null ? playerGameDeck.cardsArr.map(el => 
         <Card item={el} cardClassName={'w-32 h-40'} onClick={choosePlayerCard} />) : null}
