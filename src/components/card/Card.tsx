@@ -4,7 +4,7 @@ import cc from "classcat";
 
 
 
-interface CardProps {
+export interface CardProps {
   item: DeckType | CardType,
   onClick?: any,
   cardClassName?: String,

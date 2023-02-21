@@ -17,18 +17,24 @@ export default function Page() {
     router.push('/decksSettings');
   }
 
+  const redirectToCreateDeck = () => {
+    router.push('/createDeck');
+  }
+
   const setOnClickHandler = (id: number) => {
     switch (id) {
       case 0:
         return openStartModal;
       case 1: 
         return redirectToDecksSettings;
+      case 2:
+        return redirectToCreateDeck;
     }
   }
 
   return (
     <div className='wrapper' >
-      <div className="flex justify-between gap-10 text-white  m576:text-xl">
+      <div className="flex flex-col justify-between gap-10 text-white  m576:text-xl">
         {BUTTON_ARR.map(el => <Button key={el.id} 
         onClick={setOnClickHandler(el.id)} 
         title={el.title}

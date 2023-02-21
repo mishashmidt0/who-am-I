@@ -12,10 +12,6 @@ export const StartModal = () => {
     router.push('/playground');
   }
 
-  const setPlayerDeck = () => {
-    
-  }
-
   return (
     <ModalLayout name='start'>
       <div className="flex items-center flex-col gap-5 m-10 p-10 rounded-lg bg-white">
