@@ -1,5 +1,17 @@
 import { CardDecksArrType } from "src/types/decks";
 
+export const EMPTY_DECK = {
+  id: 27,
+  name: '',
+  imgSrc: '',
+  cardsArr: [
+    {id: 0,
+    name: '', 
+    imgSrc: '', 
+    isActive: true}
+  ],
+}
+
 export const CARD_DECKS_ARR: CardDecksArrType = [
   {id: 0, name: 'Животные', imgSrc: '/image/img/animals/animalsDeck.webp', cardsArr:
     [

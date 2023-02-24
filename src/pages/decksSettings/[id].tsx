@@ -1,24 +1,10 @@
-import { useStore } from "effector-react";
+import { useUnit } from "effector-react";
 import { Button } from "src/components/button/button";
-import { Card } from "src/components/card/Card";
-import { CardInput } from "src/components/card/CardInput";
-import { CARD_DECKS_ARR } from "src/constants/decks";
+import { CardInput } from "src/components/card/ItemCardInput";
 import { $gameDeck } from "src/store/gameDeck";
 
 export default function DecPage() {
-  let editDeck = useStore($gameDeck);
-
-  const emptyDeck = {
-    id: 27,
-    name: 'имя',
-    imgSrc: '',
-    cardsArr: [],
-  }
-
-  if (editDeck === null) {
-    editDeck = emptyDeck;
-  }
-
+  let editDeck = useUnit($gameDeck);
 
   return (
     <div className='wrapper'>
