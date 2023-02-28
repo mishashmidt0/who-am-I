@@ -1,29 +1,23 @@
-import { useRouter } from 'next/router';
+import { useEvent } from 'effector-react';
+import Link from 'next/link';
 import { Button } from 'src/components/button/button';
-import { Card } from 'src/components/card/Card';
+import { DeckCard } from 'src/components/card/DeckCard';
 import { CARD_DECKS_ARR } from 'src/constants/decks';
 import { ModalLayout } from 'src/layouts/modal-layout/modal-layout';
 import { chooseDeck } from 'src/store/gameDeck';
 
 export const StartModal = () => {
-  const router = useRouter();
-
-  const startGame= () => {
-    router.push('/playground');
-  }
-
-  const setPlayerDeck = () => {
-    
-  }
+  const chooseDeckEvent = useEvent(chooseDeck);
 
   return (
     <ModalLayout name='start'>
-      <div className="flex items-center flex-col gap-5 m-10 p-10 rounded-lg bg-white">
-        <div className="grid grid-cols-3 gap-10
-">
-          {CARD_DECKS_ARR.map(el => <Card item={el} onClick={chooseDeck} cardClassName={'w-60 h-80'} key={el.id}/>)}
+      <div className="flex  items-center flex-col gap-5 m-10 p-10 rounded-lg bg-white">
+        <div className="w-full flex justify-center flex-wrap gap-8">
+          {CARD_DECKS_ARR.map(el => <div onClick={() => chooseDeckEvent(el)} key={el.id}>
+            <DeckCard item={el} />
+            </div>)}
         </div>
-        <Button title="Начать игру" onClick={startGame} className="w-1/6 bg-red hover:bg-green" />
+        <Link href='/playground'><Button title="Начать игру" className=" bg-red hover:bg-green" /></Link>
       </div>
     </ModalLayout>
   );
