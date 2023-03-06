@@ -1,6 +1,7 @@
 import { useUnit } from "effector-react";
 import { Button } from "src/components/button/button";
-import { CardInput } from "src/components/card/ItemCardInput";
+import { DeckCardInput } from "src/components/card/DeckCardInput";
+import { ItemCardInput } from "src/components/card/ItemCardInput";
 import { $gameDeck } from "src/store/gameDeck";
 
 export default function DecPage() {
@@ -9,16 +10,14 @@ export default function DecPage() {
   return (
     <div className='wrapper'>
       <div className='flex gap-3 justify-center flex-wrap'>
-        <CardInput 
+        <DeckCardInput 
         item={editDeck} 
-        cardClassName={'w-32 h-40'} 
         key={editDeck.id} 
-        placeholder='Введите название колоды'/>
-        {editDeck.cardsArr.map(el => <CardInput 
+        />
+        {editDeck.cardsArr.map(el => <ItemCardInput 
         item={el} 
-        cardClassName={'w-32 h-40'} 
-        key={el.id} 
-        placeholder='Введите название карточки'/>)}
+        key={el.id}
+        />)}
       </div>
       <Button title='Сохранить' className='bg-red' />
     </div>
