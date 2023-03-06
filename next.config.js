@@ -7,10 +7,6 @@ module.exports = withBundleAnalyzer({
   experimental: {
     isrMemoryCacheSize: 0,
   },
-  images: {
-    domains: ['images.unsplash.com'],
-    formats: ['image/webp'],
-  },
   swcMinify: true,
 });
 
